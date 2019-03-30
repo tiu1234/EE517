@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV1 {
+  width: 25%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: red;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+#myDIV2 {
+  width: 25%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: blue;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+</style>
+</head>
+<body>
+
+<button onclick="red()">Red</button>
+<button onclick="blue()">Blue</button>
+<br/>
+<div id="myDIV1">
+Red
+</div>
+
+<div id="myDIV2">
+Blue
+</div>
+
+<script>
+function red() {
+  var r = document.getElementById("myDIV1");
+  r.style.display = "block";
+  var b = document.getElementById("myDIV2");
+  b.style.display = "none";
+}
+function blue() {
+  var r = document.getElementById("myDIV1");
+  r.style.display = "none";
+  var b = document.getElementById("myDIV2");
+  b.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
